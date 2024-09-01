@@ -99,4 +99,6 @@ jobs:
 
       # Step: Execute the tests.
       - name: Run tests
+        env:
+          DATABASE_URL: postgres://postgres:postgres@localhost:5432/test
         run: mix test
