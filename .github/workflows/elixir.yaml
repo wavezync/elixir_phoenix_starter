@@ -101,4 +101,5 @@ jobs:
       - name: Run tests
         env:
           DATABASE_URL: postgres://postgres:postgres@localhost:5432/test
+          SECRET_KEY_BASE: rs52fWH4Wrs/8mH5eA/TOJ9NwEvBj9STYI0kyRfoPR1tHuFvNgzjwLTg8qTdLXoz
         run: mix test
