@@ -25,7 +25,7 @@ old_app_name="elixir_phoenix_starter"
 old_module_name="ElixirPhoenixStarter"
 
 # Define the directories to process
-directories="lib priv test rel"
+directories="lib priv test rel config"
 
 # Rename directories
 for dir in $directories; do
