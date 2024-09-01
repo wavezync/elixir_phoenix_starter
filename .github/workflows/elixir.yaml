@@ -17,6 +17,9 @@ env:
 permissions:
   contents: read
 
+concurrency:
+  group: ${{ github.workflow }}-${{ github.ref }}
+
 jobs:
   test:
     # Set up a Postgres DB service. By default, Phoenix applications
