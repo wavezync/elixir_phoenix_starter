@@ -10,7 +10,8 @@ defmodule ElixirPhoenixStarter.Application do
     children = [
       ElixirPhoenixStarterWeb.Telemetry,
       ElixirPhoenixStarter.Repo,
-      {DNSCluster, query: Application.get_env(:elixir_phoenix_starter, :dns_cluster_query) || :ignore},
+      {DNSCluster,
+       query: Application.get_env(:elixir_phoenix_starter, :dns_cluster_query) || :ignore},
       {Phoenix.PubSub, name: ElixirPhoenixStarter.PubSub},
       # Start the Finch HTTP client for sending emails
       {Finch, name: ElixirPhoenixStarter.Finch},
